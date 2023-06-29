@@ -1,0 +1,274 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family:'Roboto', sans-serif; 
+}
+
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.toMenu{
+    height: 75px;
+    margin-top: 38px;
+    float: right;
+    margin-right: 100px;
+    cursor: pointer;
+}
+.item{
+    color: rgb(78,73,78);
+    text-decoration: none;
+}
+.menu li {
+    position: relative;
+    margin-right: 81px;
+    list-style: none;
+    color: rgb(255, 255, 255);
+}
+.menu{
+    display: inline-flex;
+}
+.menu li::before {
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    content: '';
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    margin-bottom: -2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+    background: linear-gradient(to right, rgb(234, 178, 241), rgb(185, 120, 193), rgb(141, 95, 171));
+}
+.menu li:hover::before {
+    transform: scaleX(1);
+}
+.menu[data-animation="center"] a::before {
+    transform-origin: center;
+}
+
+a{
+    text-decoration: none;
+    font-style: none;
+    color: rgb(255, 255, 255);
+}
+h3{
+    font-size: 23px;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    position: relative;
+    z-index: 2;
+}
+h2{
+    font-size: 26px;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+}
+h4{
+    font-size: 23px;
+    margin-top: 23px;
+    margin-left: 104px;
+    color: rgba(255, 255, 255, 0.404);
+    font-weight: normal;
+    position: relative;
+    z-index: 2;
+}
+h6{
+    font-size: 16px;
+    margin-top: 100px;
+    margin-left: 104px;
+    color: rgb(255, 255, 255);
+    font-weight: inherit;
+    position: relative;
+    z-index: 2;
+}
+#title_1{
+    font-size: 69px;
+    margin: 100px 104px;
+    color: rgba(255, 255, 255, 0.644);
+    font-weight: lighter;
+    position: relative;
+    z-index: 2;
+}
+#title_2{
+    font-size: 63px;
+    margin-left: 104px;
+    margin-top: -110px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+}
+/*ESTILOS DEL HEADER*/
+body{
+    background-color: rgb(2,9,23);
+}
+header{
+    background-color: rgb(8, 23, 48);
+    height: 100vh;
+    border-left: 150px;
+    border-radius: 0px 0px 1000px 0px;
+}
+header .logo_main{
+    height: 100px;
+    margin-left: 120px;
+}
+header .equalizer_header{
+    height: 60%;
+    position: absolute;
+    z-index: 1;
+    top: 12%;
+    right: 15%;
+}
+
+header .phone_header{
+    height: 75%;
+    position: absolute;
+    z-index: 1;
+    top: 34%;
+    right: 12%;
+    filter: drop-shadow(0 12px 12px rgba(0, 0, 0, 0.7));
+}
+.logos_apps{
+    margin: 30px 0px 0px 104px;
+    height: 40px;
+    position: relative;
+    z-index: 2;
+}
+.logos_apps img{
+    height: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.315);
+    border-radius: 12px;
+    box-shadow: -7px 22px 25px 0px rgba(0,0,0,0.75);
+}
+.logos_apps .google{
+    margin-left: 35px;
+}
+
+/*Sección de servicios*/
+#services{
+    height: 100vh;
+    text-align: center;
+}
+.separador{
+    margin: 60px auto;
+}
+.cont_servi{
+    width: 80%;
+    height: 450px;
+    display: inline-flex;
+}
+.uni_serv{
+    width: 25%;
+    height: 90%;
+    margin: 30px;
+}
+.uni_serv .box_icon{
+    height: 70px;
+    width: 70px;
+    background:rgb(8, 23, 48);
+    border-radius: 18px;
+    margin: auto;
+}
+.box_icon img{
+    height: 55%;
+    vertical-align: middle;
+    margin: 15% auto; 
+}
+.uni_serv .sub{
+    font-size: 22px;
+}
+.uni_serv p{
+    font-size: 22px;
+    margin: 25px 10px 10px 10px;
+    color: rgba(255, 255, 255, 0.315);
+}
+.uni_serv a{
+    color: rgb(230, 0, 255);
+    position: relative;
+    bottom: 0px;
+}
+footer {
+    background-color: rgb(7 20 38 / 65%);
+    display: flex;
+    justify-content: center;
+    position: static;
+    width: 100%;
+    height: 5%;
+}
+input {
+    width: 409px;
+    height: 35px;
+    margin-right: 26px;
+    border-radius: 20px;
+    font-family: sans-serif;
+}
+#log2 {
+    margin-top: 146px;
+    width: 159px;
+    margin-left: 83px;
+}
+#fin {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 58px;
+    margin-bottom: 55px;
+}
+#lugar {
+    display: flex;
+    margin-left: 37px;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: rgba(177, 177, 177, 0.856);
+}
+#com {
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+    color: rgba(177, 177, 177, 0.856);
+}
+#contac {
+    display: flex;
+}
+#finBoton1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 100px;
+}
+#finBoton2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 59px;
+    margin-bottom: 23px;
+}
+.boton1, .boton2 {
+    cursor: pointer;
+    margin: 11px 1px 2px 5px;
+    color: rgba(177, 177, 177, 0.856);
+    background: transparent;
+}
+.boton1:hover, .boton2:hover {
+    color: rgb(255, 255, 255);
+    
+}
+#icon {
+    cursor: pointer;
+    margin-left: 86px;
+}
+i {
+    font-size: 25px;
+    margin: 10px;
+    color: rgb(230, 0, 255);
+}
+i:hover {
+    color: rgb(255, 255, 255);
+}

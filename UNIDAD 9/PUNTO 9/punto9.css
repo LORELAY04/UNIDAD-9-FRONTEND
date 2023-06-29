@@ -1,0 +1,30 @@
+table {
+  table-layout: fixed;
+  background-color: yellow;
+  width: 64%;
+  border-collapse: collapse;
+  border: 3px solid #080000;
+  border-style: dotted;
+}
+
+th{
+  color: red;
+  font-style: italic;
+  font-size: 10px;
+}
+
+p{
+  width: 846px;
+  margin: 0px;
+  color: black;
+  font-size: 16px;
+  text-align: justify;
+}
+td{
+  border: 3px solid #080000;
+  border-style: dotted;
+}
+span{
+  font-size: 16px;
+  font-style: bold,italic;
+}

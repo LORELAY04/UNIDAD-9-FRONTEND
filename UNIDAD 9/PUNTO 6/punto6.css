@@ -1,0 +1,34 @@
+h1{
+    font-size: 30px;
+}
+a{
+    display: flex;
+    margin-bottom: 22px;
+}
+
+#marca{
+    color: yellow;
+    font-size: 30px;
+    font-weight: bolder;
+    border-bottom: 142px;
+}
+#as{
+    color: mediumorchid;
+    font-size: 30px;
+    font-weight: bolder;
+}
+#marca:hover{
+    color: black;
+    width: 150px;
+    height: auto;
+    background-color: gold;
+    transition: background-color .5s;
+}
+#as:hover{
+    color: blue;
+    width: 150px;
+    height: auto;
+    background-color: plum;
+    transition: background-color .5s;
+    
+}

@@ -1,0 +1,30 @@
+a:hover{
+    color: rgb(249, 249, 250);
+    width: 55px;
+    height: auto;
+    background-color: #091edb;
+    transition: background-color .5s;
+    justify-content: center;
+    padding: 10px;
+    
+}
+nav{
+    background-color:rgb(231, 192, 231);
+    width: 500px;
+    padding: 10px;
+    justify-content: center;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  width: 400px;
+}
+
+li {
+  margin-left: 50px;
+}
+
+a{text-decoration:none;
+}
